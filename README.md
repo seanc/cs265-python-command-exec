@@ -11,3 +11,8 @@ Advanced Usage:
 ```
 $ python run.py ls | grep run.py
 ```
+
+## Todo
+- Toggle command color output
+- Save the command output to a variable
+- The command should only be blocked explicitly if it is being run, i.e. `echo rm` shouldn't be blocked, however, `true | rm` should be. 
