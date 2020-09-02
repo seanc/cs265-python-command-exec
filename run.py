@@ -8,9 +8,8 @@ blacklist = [
 ]
 
 argv = sys.argv[1:]
-command = argv[0]
 
-if command in blacklist or any(blacklistedCommand in blacklist for blacklistedCommand in argv):
+if any(blacklistedCommand in blacklist for blacklistedCommand in argv):
   print("No! This command is forbidden.")
   sys.exit(1)
 
